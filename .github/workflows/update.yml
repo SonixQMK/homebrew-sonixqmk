@@ -1,0 +1,28 @@
+name: Autocreate PR for SonixFlasher updates
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '45 5 * * *'
+
+jobs:
+  update:
+    runs-on: macos-12
+    steps:
+      - name: Update Homebrew formula
+        uses: dawidd6/action-homebrew-bump-formula@v3
+        with:
+          # Required, custom GitHub access token with only the 'public_repo' and 'workflow' scopes
+          token: ${{secrets.SONIXQMK_BOT_TOKEN}}
+          # Optional, use the origin repository instead of forking
+          no_fork: true
+          # Bump all outdated formulae in this tap
+          tap: SonixQMK/homebrew-sonixqmk
+          # Bump only these formulae if outdated
+          formula: sonixflasher
+          # Optional, if don't want to check for already open PRs
+          force: false # true
+          # Need to set this input if want to use `brew livecheck`
+          livecheck: true
+          message: |
+            **⚠️ Do not merge this PR directly! ⚠️**
+            Wait for `brew test-bot` to complete, then label it with `pr-pull` instead to make the bot build and upload the bottle.
