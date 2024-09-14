@@ -20,6 +20,6 @@ class Sonixflasher < Formula
 
   test do
     output = shell_output("#{bin}/sonixflasher -V 2>&1", 1)
-    assert_match "sonixflasher 2.0.5\n", output
+    assert_match(/sonixflasher \d+\.\d+\.\d+\n/, output)
   end
 end
