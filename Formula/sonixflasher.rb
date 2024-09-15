@@ -5,6 +5,13 @@ class Sonixflasher < Formula
   sha256 "8fe59b56d4d5c5419034700ba43ccca85ee448ba631634c8189dcba59ddbdbcb"
   license "GPL-3.0-only"
 
+  bottle do
+    root_url "https://ghcr.io/v2/sonixqmk/sonixqmk"
+    sha256 cellar: :any, arm64_sonoma: "c04a05dcda119eec98fa8c6cfc3068069d75e76a03407d3b44e46294a20c285a"
+    sha256 cellar: :any, ventura:      "3b035d3680be48c3923c613a27a23018de82176dd17afb07e9ef40346f164349"
+    sha256 cellar: :any, monterey:     "59cb2d5a525ac128baa2869b27343f448a2fb088010ccfd882a1c16de95fbc66"
+  end
+
   depends_on "pkg-config" => :build
   depends_on "hidapi"
 
