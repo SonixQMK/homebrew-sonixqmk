@@ -7,9 +7,9 @@ class Sonixflasher < Formula
 
   bottle do
     root_url "https://ghcr.io/v2/sonixqmk/sonixqmk"
-    sha256 cellar: :any, arm64_sonoma: "33a5c09e216632da93fe29464109fe8dc27174700d7bc0039d5f5515ef1cc156"
-    sha256 cellar: :any, ventura:      "d675823deaa3e0ff25b060635a73ee56c3d2694a667090083984e7b37ade3513"
-    sha256 cellar: :any, monterey:     "3e8803d66de860de4fb9e20ac0591e1d095c033a1f914bc657f6d3e9f53c40a9"
+    sha256 cellar: :any, arm64_sequoia: "3061076268cd7c2194515afb6fb695eabd4215be3345a71b53cabfdaf4bdb9ed"
+    sha256 cellar: :any, arm64_sonoma:  "5664effea348c5252f774dee19343a6cd39094d6389f7175e505099f81f62339"
+    sha256 cellar: :any, ventura:       "fec301d557b2ec03b7c79a716977d91478d8dafa173b3365ad38e3e85e5d4b0e"
   end
 
   depends_on "pkg-config" => :build
