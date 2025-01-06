@@ -1,8 +1,8 @@
 class Sonixflasher < Formula
   desc "CLI-based Flasher for Sonix SN32F2xx MCUs"
   homepage "https://github.com/SonixQMK/SonixFlasherC"
-  url "https://github.com/SonixQMK/SonixFlasherC/archive/refs/tags/2.0.7.tar.gz"
-  sha256 "577f162c64833e19eef6213a6af0c506b534fe3db54ec6d61089e1dae28bcd3e"
+  url "https://github.com/SonixQMK/SonixFlasherC/archive/refs/tags/2.0.8.tar.gz"
+  sha256 "fb84fca699d7a91e2bfcfe6aad00a5967f6ad08606c602d49d37d5a7a7fa0db8"
   license "GPL-3.0-only"
 
   bottle do
