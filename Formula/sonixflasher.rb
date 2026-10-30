@@ -1,8 +1,8 @@
 class Sonixflasher < Formula
-  desc "CLI-based flasher and diagnostics tool for Sonix SN32F2xx USB bootloader devices"
+  desc "CLI-based flasher and diagnostics tool for Sonix SN32F2xx and SN34F2xx USB bootloader devices"
   homepage "https://github.com/SonixQMK/SonixFlasherC"
-  url "https://github.com/SonixQMK/SonixFlasherC/archive/refs/tags/3.0.0.tar.gz"
-  sha256 "2b8f377544f91e857e10dea35cbadd26062f81a17a71011145f1214b68428044"
+  url "https://github.com/SonixQMK/SonixFlasherC/archive/refs/tags/3.1.0.tar.gz"
+  sha256 "61a8f603613a1b6996ba1f97f9cb9c540b30223810f9f0f804cfa3fdfc9e9864"
   license "GPL-3.0-only"
 
   bottle do
